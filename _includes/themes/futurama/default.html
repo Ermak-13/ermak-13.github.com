@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Bender Club</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/default.css" />
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/page.css" />
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/post.css" />
+
+    <script type="text/javascript" src="{{ ASSET_PATH }}/javascripts/default.js"></script>
+  </head>
+
+  <body class="{{ page.name }}">
+    <div class="main-container container">
+      <div class="nav-container container border">
+        <ul class="nav">
+          <li class="nav-element">
+            <a href="{{ BASE_PATH }}{{ site.JB.pages_path }}" class="nav-el">
+              <img src="{{ ASSET_PATH }}/images/nav-container.png" />
+            </a>
+          </li>
+          <li class="nav-element">
+            <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}" class="nav-el">
+              <img src="{{ ASSET_PATH }}/images/nav-container.png" />
+            </a>
+          </li>
+          <li class="nav-element">
+            <a href="{{ BASE_PATH }}{{ site.JB.about_path }}" class="nav-el">
+              <img src="{{ ASSET_PATH }}/images/nav-container.png" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content-container container border {{ page.name }}">
+        {{ content }}
+      </div>
+
+      <div class="bender-container container">
+        <img src="{{ ASSET_PATH }}/images/bender.png" class="bender-photo"/>
+      </div>
+    </div>
+
+    {% include JB/analytics %}
+  </body>
+</html>
