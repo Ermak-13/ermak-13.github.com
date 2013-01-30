@@ -12,9 +12,15 @@
 
     <!-- Le styles -->
 
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+
     <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/default.css" />
     <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/page.css" />
     <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/post.css" />
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
 
     <script type="text/javascript" src="{{ ASSET_PATH }}/javascripts/default.js"></script>
   </head>
@@ -24,17 +30,17 @@
       <div class="nav-container container border">
         <ul class="nav">
           <li class="nav-element">
-            <a href="{{ BASE_PATH }}{{ site.JB.pages_path }}" class="nav-el">
+            <a href="{{ BASE_PATH }}{{ site.JB.pages_path }}" class="tooltip-enabled" title="pages">
               <img src="{{ ASSET_PATH }}/images/nav-container.png" />
             </a>
           </li>
           <li class="nav-element">
-            <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}" class="nav-el">
+            <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}" class="tooltip-enabled" title="tags">
               <img src="{{ ASSET_PATH }}/images/nav-container.png" />
             </a>
           </li>
           <li class="nav-element">
-            <a href="{{ BASE_PATH }}{{ site.JB.about_path }}" class="nav-el">
+            <a href="{{ BASE_PATH }}{{ site.JB.about_path }}" class="tooltip-enabled" title="about">
               <img src="{{ ASSET_PATH }}/images/nav-container.png" />
             </a>
           </li>

@@ -1,1 +1,4 @@
-console.log('bender club')
+$(function() {
+  $('.tooltip-enabled').tooltip();
+  $('.tooltip-disabled').tooltip({ disabled: true });
+});
