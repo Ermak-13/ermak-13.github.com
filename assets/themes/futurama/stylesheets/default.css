@@ -61,6 +61,29 @@ body {
   padding: 25px;
 }
 
+.bender-container .bender-mind {
+  background: white;
+
+  position: fixed;
+  right: 50px;
+  bottom: 200px;
+  z-index: 1;
+
+  text-align: center;
+
+  padding: 15px;
+
+  border: solid 3px #444;
+  border-radius: 15px;
+}
+
+.bender-container .bender-way {
+  position: fixed;
+  right: 80px;
+  bottom: 105px;
+  z-index: 1;
+}
+
 .bender-container .bender-photo {
   width: 175px;
 
