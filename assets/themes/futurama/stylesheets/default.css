@@ -28,54 +28,36 @@ body {
 /* END - common */
 
 .nav-container {
-  background: white;
-  width: 80px;
-
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1;
-
-  border-right-style: none;
-  border-top-style: none;
-  border-radius: 0;
-  border-bottom-left-radius: 15px;
+  background: url(images/content-container.png);
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px 25px;
 }
 
 .nav {
-  width: 80px;
-
   list-style-type: none;
-  text-align: center;
 
   margin: 0;
-  margin-top: 10px;
   padding: 0;
 }
 
 .nav .nav-element {
-  width: 80px;
-  height: 75px;
+  display: inline-block;
 }
 
 .nav .nav-element img {
-  width: 70px;
-}
-
-.nav .nav-element img:hover {
   width: 75px;
-}
-
-/* TODO: navigation is not finished! */
-.nav-container {
-  display: none;
 }
 
 .content-container {
   background: url(images/content-container.png);
   max-width: 1000px;
 
+  border-top: none;
+
   margin: 50px auto;
+  margin-top: 0;
   padding: 25px;
 }
 
