@@ -27,13 +27,6 @@ body {
 }
 /* END - common */
 
-.main-container {
-  width: 100%;
-  min-width: 600px;
-  height: 100%;
-}
-
-
 .nav-container {
   background: white;
   width: 80px;
@@ -73,17 +66,28 @@ body {
   width: 75px;
 }
 
+/* TODO: navigation is not finished! */
+.nav-container {
+  display: none;
+}
+
 .content-container {
   background: url(images/content-container.png);
+  max-width: 1000px;
 
-  margin: 50px 200px 50px 50px;
+  margin: 50px auto;
   padding: 25px;
 }
 
 .bender-container .bender-photo {
-  width: 200px;
+  width: 175px;
 
   position: fixed;
   right: 0;
   bottom: 0;
 }
+
+@media(max-width: 1200px) {
+  .bender-container .bender-photo { display: none; }
+}
+
