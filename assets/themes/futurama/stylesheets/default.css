@@ -46,8 +46,24 @@ body {
   display: inline-block;
 }
 
+.nav .nav-element a {
+  display: inline-block;
+}
+
 .nav .nav-element img {
   width: 75px;
+  float: left;
+  margin-right: 10px;
+}
+
+.nav .nav-element p {
+  float: left;
+  display: none;
+
+  text-transform: uppercase;
+  color: #444;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .content-container {
