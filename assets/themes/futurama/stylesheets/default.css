@@ -113,6 +113,8 @@ body {
 }
 
 @media(max-width: 1200px) {
+  .bender-container .bender-mind { display: none; }
+  .bender-container .bender-way { display: none; }
   .bender-container .bender-photo { display: none; }
 }
 
