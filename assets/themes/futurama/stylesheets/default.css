@@ -17,7 +17,7 @@ body {
 .border {
   border-style: solid;
   border-color: #444;
-  border-width: 5px;
+  border-width: 3px;
   border-radius: 15px;
 }
 
@@ -25,65 +25,87 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.container-background {
+  background: url(images/content-container.png);
+}
 /* END - common */
 
-.main-container {
-  width: 100%;
-  min-width: 600px;
-  height: 100%;
-}
-
-
 .nav-container {
-  background: white;
-  width: 80px;
-
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1;
-
-  border-right-style: none;
-  border-top-style: none;
-  border-radius: 0;
-  border-bottom-left-radius: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0 25px;
 }
 
 .nav {
-  width: 80px;
-
   list-style-type: none;
-  text-align: center;
 
   margin: 0;
-  margin-top: 10px;
   padding: 0;
 }
 
 .nav .nav-element {
-  width: 80px;
-  height: 75px;
+  display: inline-block;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;  
+  font-weight: bold;
+  font-size: 24px;
+
+  margin: 15px 10px;
+  padding: 0;
 }
 
-.nav .nav-element img {
-  width: 70px;
-}
-
-.nav .nav-element img:hover {
-  width: 75px;
-}
+.nav .nav-pages { color: #ed6c02; }
+.nav .nav-tags { color: #001b87; }
+.nav .nav-about { color: #ff2200; }
 
 .content-container {
-  background: url(images/content-container.png);
+  max-width: 1000px;
 
-  margin: 50px 200px 50px 50px;
+  border-top: none;
+
+  margin: 50px auto;
+  margin-top: 0;
   padding: 25px;
 }
 
+.bender-container .bender-mind {
+  background: white;
+
+  position: fixed;
+  right: 50px;
+  bottom: 200px;
+  z-index: 1;
+
+  text-align: center;
+
+  padding: 15px;
+
+  border: solid 3px #444;
+  border-radius: 15px;
+}
+
+.bender-container .bender-way {
+  position: fixed;
+  right: 80px;
+  bottom: 105px;
+  z-index: 1;
+}
+
 .bender-container .bender-photo {
-  width: 200px;
+  width: 175px;
 
   position: fixed;
   right: 0;
   bottom: 0;
 }
+
+@media(max-width: 1200px) {
+  .bender-container .bender-mind { display: none; }
+  .bender-container .bender-way { display: none; }
+  .bender-container .bender-photo { display: none; }
+}
+
