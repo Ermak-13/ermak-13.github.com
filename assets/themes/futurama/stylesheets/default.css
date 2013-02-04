@@ -25,14 +25,17 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.container-background {
+  background: url(images/content-container.png);
+}
 /* END - common */
 
 .nav-container {
-  background: url(images/content-container.png);
   max-width: 1000px;
   margin: 0 auto;
   margin-top: 50px;
-  padding: 10px 25px;
+  padding: 0 25px;
 }
 
 .nav {
@@ -44,34 +47,22 @@ body {
 
 .nav .nav-element {
   display: inline-block;
-}
-
-.nav .nav-element a {
-  display: inline-block;
-}
-
-.nav .nav-element img {
-  width: 75px;
-  float: left;
-  margin-right: 10px;
-}
-
-.nav .nav-element p {
-  float: left;
-  display: none;
 
   text-transform: uppercase;
-  color: #444;
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;  
   font-weight: bold;
   font-size: 24px;
 
-  margin: 0;
+  margin: 15px 10px;
   padding: 0;
-  margin-top: 20px;
 }
 
+.nav .nav-pages { color: #ed6c02; }
+.nav .nav-tags { color: #001b87; }
+.nav .nav-about { color: #ff2200; }
+
 .content-container {
-  background: url(images/content-container.png);
   max-width: 1000px;
 
   border-top: none;

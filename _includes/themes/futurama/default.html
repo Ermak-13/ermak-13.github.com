@@ -13,6 +13,7 @@
     <!-- Le styles -->
 
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/default.css" />
     <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/page.css" />
@@ -27,36 +28,21 @@
 
   <body class="{{ page.name }}">
     <div class="main-container container">
-      <div class="nav-container container border">
+      <div class="nav-container container border container-background">
         <div class="nav">
-          <div class="nav-element">
-            <a href="{{ BASE_PATH }}{{ site.JB.pages_path }}">
-              <div class="nav-link">
-                <img src="{{ ASSET_PATH }}/images/nav-container.png" />
-                <p>pages</p>
-              </div>
-            </a>
-          </div>
-          <div class="nav-element">
-            <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}">
-              <div class="nav-link">
-                <img src="{{ ASSET_PATH }}/images/nav-container.png" />
-                <p>tags</p>
-              </div>
-            </a>
-          </div>
-          <div class="nav-element">
-            <a href="{{ BASE_PATH }}{{ site.JB.about_path }}">
-              <div class="nav-link">
-                <img src="{{ ASSET_PATH }}/images/nav-container.png" />
-                <p>about</p>
-              </div>
-            </a>
-          </div>
+          <a href="{{ BASE_PATH }}{{ site.JB.pages_path }}" class="nav-element nav-pages">
+            pages
+          </a>
+          <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}" class="nav-element nav-tags">
+            tags
+          </a>
+          <a href="{{ BASE_PATH }}{{ site.JB.about_path }}" class="nav-element nav-about">
+            about
+          </a>
         </div>
       </div>
 
-      <div class="content-container container border {{ page.name }}">
+      <div class="content-container container border {{ page.name }} container-background">
         {{ content }}
       </div>
 
