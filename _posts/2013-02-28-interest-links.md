@@ -19,4 +19,9 @@ tags: []
             <strong>dotfiles - про то как устроить свои конфиги</strong>
         </a>
     </li>
+    <li>
+      <a href="http://the-bosha.ru/2010/06/01/terminal-window-manager-tmux/">
+        <strong>tmux - неплохая статья по старту в tmux</strong>
+      </a>
+    </li>
 </ul>
