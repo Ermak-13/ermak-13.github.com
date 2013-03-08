@@ -14,4 +14,9 @@ tags: []
             <strong>Тестирование производительности в python</strong>
         </a>
     </li>
+    <li>
+        <a href="http://dotfiles.github.com/">
+            <strong>dotfiles - про то как устроить свои конфиги</strong>
+        </a>
+    </li>
 </ul>
